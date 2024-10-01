@@ -1,9 +1,1 @@
-const Configuration = {
-  /*
-   * Resolve and load @commitlint/config-conventional from node_modules.
-   * Referenced packages must be installed
-   */
-  extends: ['@commitlint/config-conventional'],
-};
-
-export default Configuration;
+module.exports = { extends: ['@commitlint/config-conventional'] };
