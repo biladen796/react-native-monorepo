@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "tvos", "android", "web"],
+  "ios": {
+    "modules": ["SharedUiComponentsModule"]
+  },
+  "android": {
+    "modules": ["com.sgr.shared_ui_components.SharedUiComponentsModule"]
+  }
+}

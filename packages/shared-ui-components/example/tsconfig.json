@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "shared-ui-components": ["../src/index"],
+      "shared-ui-components/*": ["../src/*"]
+    }
+  }
+}

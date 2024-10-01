@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "sgr-mobile-monorepo",
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "lint-check": "yarn workspaces foreach -R yarn lint-check"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^9.1.6"
+  }
+}
