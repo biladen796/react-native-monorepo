@@ -8,7 +8,9 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true
   },
   "include": ["./src"],
   "exclude": ["**/__mocks__/*", "**/__tests__/*"]

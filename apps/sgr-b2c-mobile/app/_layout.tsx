@@ -3,13 +3,22 @@ import { Stack } from 'expo-router';
 import 'react-native-reanimated';
 
 import { themeConfig, ThemeProvider } from 'shared-ui-components';
+import { Provider } from 'react-redux';
+import { store } from '@/src/redux/store';
 
 export default function RootLayout() {
   return (
-    <ThemeProvider config={themeConfig}>
-      <Stack>
-        <Stack.Screen name="+not-found" />
-      </Stack>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider config={themeConfig}>
+        <Stack>
+          <Stack.Screen
+            name="home"
+            options={{
+              headerShown: false,
+            }}
+          />
+        </Stack>
+      </ThemeProvider>
+    </Provider>
   );
 }
