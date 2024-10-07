@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "postinstall": "husky init",
+    "postinstall": "husky install",
     "lint-check": "yarn workspaces foreach --topological-dev -W run lint-check",
     "prepare": "husky"
   },
