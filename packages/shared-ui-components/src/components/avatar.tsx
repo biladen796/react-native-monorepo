@@ -1,3 +1,11 @@
-import { Avatar } from 'tamagui';
+import { Text, View } from 'tamagui';
 
-export default Avatar;
+const StyledAvatar = () => {
+  return (
+    <View>
+      <Text testID="avatar-text">Avatar</Text>
+    </View>
+  );
+};
+
+export default StyledAvatar;

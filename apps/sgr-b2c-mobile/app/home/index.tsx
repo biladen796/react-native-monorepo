@@ -1,7 +1,11 @@
 import { useLoginMutation } from '@/src/libs/networking/providers/swg-ticket-api';
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Button } from 'shared-ui-components';
+import {
+  Button,
+  StyledAvatar,
+  StyledLinearGradient,
+} from 'shared-ui-components';
 
 export default function Home() {
   const [login] = useLoginMutation();
@@ -13,8 +17,12 @@ export default function Home() {
         alignItems: 'center',
       }}>
       <Text>Home page</Text>
+      <StyledAvatar />
       <Button
-        theme={'blue'}
+        theme={'dark'}
+        // color={'yellow'}
+        // backgroundColor={'red'}
+        fontWeight={'700'}
         onPress={async () => {
           const data = new FormData();
           data.append('username', 'test');
@@ -28,6 +36,7 @@ export default function Home() {
         }}>
         Login
       </Button>
+      <StyledLinearGradient />
     </View>
   );
 }

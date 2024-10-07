@@ -25,8 +25,7 @@ export default function NotFoundScreen() {
             },
           );
           dispatch(appActions.saveLoginState(data));
-        }}
-        theme="blue">
+        }}>
         Login
       </Button>
     </View>

@@ -1,3 +1,7 @@
-import { Button } from 'tamagui';
+import { Button, ButtonProps } from 'tamagui';
 
-export default Button;
+const StyledButton = (props: ButtonProps & { text?: string }) => {
+  return <Button {...props}>{props.text}</Button>;
+};
+
+export default StyledButton;

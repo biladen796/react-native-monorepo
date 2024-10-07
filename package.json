@@ -7,12 +7,17 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "husky",
-    "lint-check": "yarn workspaces foreach -R yarn lint-check"
+    "postinstall": "husky init",
+    "lint-check": "yarn workspaces foreach --topological-dev -W run lint-check"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "husky": "^9.1.6"
-  }
+    "@commitlint/config-conventional": "^19.5.0"
+  },
+  "dependencies": {
+    "@tamagui/cli": "^1.112.22",
+    "@tamagui/config": "^1.112.22",
+    "tamagui": "^1.112.22"
+  },
+  "packageManager": "yarn@4.5.0"
 }

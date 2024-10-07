@@ -1,1 +1,1 @@
-yarn workspaces run lint-check
+yarn lint-check

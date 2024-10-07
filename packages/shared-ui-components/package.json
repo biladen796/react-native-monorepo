@@ -29,10 +29,6 @@
   "author": "TienDX <doxuantien96@gmail.com> (https://github.com/biladen796)",
   "license": "MIT",
   "homepage": "https://github.com/biladen796/shared-ui-components#readme",
-  "dependencies": {
-    "@tamagui/config": "^1.112.3",
-    "tamagui": "^1.112.3"
-  },
   "devDependencies": {
     "@types/react": "^18.0.25",
     "eslint": "^8.57.0",
@@ -44,8 +40,11 @@
     "prettier": "^3.3.3"
   },
   "peerDependencies": {
+    "@tamagui/cli": "*",
+    "@tamagui/config": "*",
     "expo": "*",
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "tamagui": "*"
   }
 }
