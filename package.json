@@ -8,11 +8,13 @@
   ],
   "scripts": {
     "postinstall": "husky init",
-    "lint-check": "yarn workspaces foreach --topological-dev -W run lint-check"
+    "lint-check": "yarn workspaces foreach --topological-dev -W run lint-check",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0"
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^9.1.6"
   },
   "dependencies": {
     "@tamagui/cli": "^1.112.22",
