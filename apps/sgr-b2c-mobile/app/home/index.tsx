@@ -20,6 +20,7 @@ export default function Home() {
       <StyledAvatar />
       <Button
         theme={'dark'}
+        text="Login"
         // color={'yellow'}
         // backgroundColor={'red'}
         fontWeight={'700'}
@@ -33,9 +34,8 @@ export default function Home() {
           } catch (error) {
             console.error('rejected', error);
           }
-        }}>
-        Login
-      </Button>
+        }}
+      />
       <StyledLinearGradient />
     </View>
   );

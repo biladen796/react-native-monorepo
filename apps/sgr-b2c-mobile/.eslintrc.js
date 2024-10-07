@@ -19,6 +19,7 @@ module.exports = {
     "next.config.mjs",
     "android",
     "ios",
+    "expo-env.d.ts"
   ],
   "rules": {
     "no-unused-vars": "off",
