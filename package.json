@@ -9,6 +9,7 @@
   "scripts": {
     "postinstall": "husky install",
     "lint-check": "yarn workspaces foreach --topological-dev -W run lint-check",
+    "build-own-packages": "yarn workspace shared-ui-components run build",
     "prepare": "husky"
   },
   "devDependencies": {
