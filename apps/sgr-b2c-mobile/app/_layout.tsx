@@ -5,9 +5,18 @@ import * as SplashScreen from 'expo-splash-screen';
 import { defaultThemeConfig, ThemeProvider } from 'shared-ui-components';
 import { Provider } from 'react-redux';
 import { store } from '@/src/redux/store';
+import * as Notifications from 'expo-notifications';
 import { View } from 'react-native';
 import { Image } from 'expo-image';
 import welcomeScreen from '@/assets/images/welcomeScreen.png';
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
 
 SplashScreen.preventAutoHideAsync();
 

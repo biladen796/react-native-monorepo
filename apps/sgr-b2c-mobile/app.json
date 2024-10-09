@@ -21,7 +21,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.sgr.sgrb2cmobile"
+      "package": "com.sgr.sgrb2cmobile",
+      "googleServicesFile": "./assets/google/google-services.json"
     },
     "web": {
       "bundler": "metro",
@@ -58,6 +59,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "71690b72-e4b7-4a21-a108-6305069a4e6d"
+      }
     }
   }
 }
