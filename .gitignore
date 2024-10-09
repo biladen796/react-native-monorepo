@@ -1,3 +1,4 @@
 node_modules
 **/.DS_Store
 .yarn/install-state.gz
+apps/sgr-b2c-mobile/assets/google/google-services.json
